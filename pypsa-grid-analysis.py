@@ -109,13 +109,13 @@ netzmodell = (
 netzmodell = netzmodell.loc[:, ~netzmodell.columns.duplicated(keep='last')]
 
 # read PyPSA-Eur network
-n = pypsa.Network("data/base_eur.nc")
+n = pypsa.Network("data/base_eur_50Hertz.nc")
 n.links['country'] = n.links.bus0.map(n.buses.country)
 n.lines['country'] = n.lines.bus0.map(n.buses.country)
 n.calculate_dependent_values()
 
 # read PyPSA-Earth network
-m = pypsa.Network("data/base_earth.nc")
+m = pypsa.Network("data/base_earth_50Hertz.nc")
 m.links['country'] = m.links.bus0.map(m.buses.country)
 m.lines['country'] = m.lines.bus0.map(m.buses.country)
 m.calculate_dependent_values()
@@ -257,4 +257,4 @@ for index, line in netzmodell.iterrows():
 
 
 folium.LayerControl().add_to(folium_map)
-folium_map.save("pypsa-grid-analysis.html")
+folium_map.save("grid-analysis.html")
