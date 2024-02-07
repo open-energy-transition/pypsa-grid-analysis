@@ -28,5 +28,5 @@ The following python dependencies are required:
 
 # LICENSE
 All code is published under the MIT License.
-base_eur_50Hertz.nc and base_earth_50Hertz.nc are published under the CC-BY-4.0 License.
-StatischesNetzmodell_Datentabelle2023.csv has no license, and was downloaded [here](https://www.50hertz.com/de/Transparenz/Kennzahlen/Netzdaten/StatischesNetzmodell/)
+`data/base_eur_50Hertz.nc` and `data/base_earth_50Hertz.nc` are published under the CC-BY-4.0 License.
+`data/StatischesNetzmodell_Datentabelle2023.csv` has no designated license, and was downloaded [here](https://www.50hertz.com/de/Transparenz/Kennzahlen/Netzdaten/StatischesNetzmodell/).
